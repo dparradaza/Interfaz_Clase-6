@@ -41,16 +41,14 @@ public class LoginComponent implements ActionListener{
             check="si";
         if(loginTemplate.getCheckNo().isSelected())
             check="no";
-        JOptionPane.showMessageDialog(
-            null, "Nombre Usuario: "+nombreUsuario+"\n Clave Usuario: "+claveUsuario+ 
-            "\nTipo Usuario: "+tipoUsuario+"\n¿Notificaciones?: "+check, "Advertencia", 1
-        );
+        System.out.println("Nombre Usuario: "+nombreUsuario+"\n Clave Usuario: "+claveUsuario+ 
+            "\nTipo Usuario: "+tipoUsuario+"\n¿Notificaciones?: "+check);
         
     }
 
     public void entrar(){
-    	System.out.print("aaaa");
-        this.ventanaPrincipal = new VentanaPrincipalComponent();
+ 
+        this.ventanaPrincipal = new VentanaPrincipalComponent(this);
         this.ventanaPrincipal.getClass();
         loginTemplate.setVisible(false);
     }

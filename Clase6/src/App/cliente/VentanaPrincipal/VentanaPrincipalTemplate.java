@@ -15,7 +15,6 @@ import App.services.RecursosService;
 
 public class VentanaPrincipalTemplate extends JFrame {
 
-    private static final long serialVersionUID = 8914150529633029064L;
     private RecursosService sRecursos;
     private ObjGraficoService sObjGraficos;
     private VentanaPrincipalComponent vistaPrincipalComponent;
