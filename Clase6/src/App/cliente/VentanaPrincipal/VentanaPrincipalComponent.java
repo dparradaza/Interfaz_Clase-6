@@ -17,15 +17,27 @@ public class VentanaPrincipalComponent  {
 
     private LoginComponent loginComponent;
 
-    public VentanaPrincipalComponent(LoginComponent loginComponent){
+    public LoginComponent getLoginComponent() {
+		return loginComponent;
+	}
+
+	public void setLoginComponent(LoginComponent loginComponent) {
+		this.loginComponent = loginComponent;
+	}
+
+	public VentanaPrincipalComponent(LoginComponent loginComponent){
         this.loginComponent = loginComponent;
         this.vistaPrincipalTemplate= new VentanaPrincipalTemplate(this);
         
         this.navegacionUsuarioComponent = new navegacionComponent(this);
+        this.barraTituloComponent = new BusquedaComponent();
 
         vistaPrincipalTemplate.getPNavegacion().add(
             navegacionUsuarioComponent.getNavegacionUsuarioTemplate()
         );
+        vistaPrincipalTemplate.getPBarra().add(
+        		barraTituloComponent.getBarraTituloTemplate()
+        		);
     }
 
     public VentanaPrincipalTemplate getVistaPrincipalTemplate(){

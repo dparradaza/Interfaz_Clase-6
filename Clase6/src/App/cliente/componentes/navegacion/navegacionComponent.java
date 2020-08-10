@@ -23,7 +23,12 @@ public class navegacionComponent implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		//this.vistaPrincipalComponent.mostrarComponente(e.getActionCommand().trim())
+		if(e.getActionCommand()=="               <       ") {
+			this.vistaPrincipalComponent.getVistaPrincipalTemplate().setVisible(false);
+			this.vistaPrincipalComponent.getLoginComponent().getLoginTemplate().setVisible(true);;
 		
+			
+		}
+				
 	}
 }

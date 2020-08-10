@@ -1,2 +1,12 @@
-# Interfaz_Clase-6
-Interfaz gráfica con Java
+# Interfaz_Clase6
+## Diego Alejandro Parra Daza 20141020063
+Interfaz gráfica con java
+
+Sigle page aplication
+
+![Alt text](clase6/recursos/siglepage.png?raw=true "calse6")
+
+
+El final esperado es con base en la siguiente imagen
+
+![Alt text](clase6/recursos/Proyecto.png?raw=true "calse6")

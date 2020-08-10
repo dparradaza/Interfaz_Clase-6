@@ -40,13 +40,13 @@ public class VentanaPrincipalTemplate extends JFrame {
     }
 
     public void crearJPanels(){
-        pNavegacion = sObjGraficos.construirJPanel(0, 0, 250, 700,sRecursos.getColorAzul(), null);
+        pNavegacion = sObjGraficos.construirJPanel(0, 0, 200, 700,sRecursos.getColorAzul(), null);
         this.add(pNavegacion);
 
-        pBarra = sObjGraficos.construirJPanel(250, 0, 850, 50,sRecursos.getColorAzul(), null);
+        pBarra = sObjGraficos.construirJPanel(200, 0, 900, 50,Color.white, null);
         this.add(pBarra);
 
-        pPrincipal = sObjGraficos.construirJPanel(250, 50, 850, 600, Color.WHITE, null);
+        pPrincipal = sObjGraficos.construirJPanel(200, 50, 900, 600, new Color(248, 249, 252), null);
         this.add(pPrincipal);
     }
 

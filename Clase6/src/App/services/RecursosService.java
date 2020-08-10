@@ -13,9 +13,9 @@ public class RecursosService {
     private Font fontTPrincipal, fontTitulo, fontSubtitulo,fontBotones;
     private Cursor cMano;
     private Border borderInferiorAzul, border;
-    private ImageIcon iUsuario,iportada,iIconos;
+    private ImageIcon iUsuario,iportada,iIconos,iProfile,iMensaje,iCampana;
 
-    static private RecursosService servicio;
+	static private RecursosService servicio;
 
     private RecursosService(){
         colorAzul = new Color(78, 115, 223);
@@ -30,7 +30,9 @@ public class RecursosService {
 		iUsuario = new ImageIcon("recursos/perfil.png");
 		iportada = new ImageIcon("recursos/imagen-estadistica.png");
 		iIconos = new ImageIcon("recursos/icons.png");
-		
+		iProfile = new ImageIcon("recursos/profile.png");
+		iMensaje= new ImageIcon("recursos/mensaje.png");
+		iCampana= new ImageIcon("recursos/campana.png");
 		border = BorderFactory.createMatteBorder(0, 0, 2, 0, Color.DARK_GRAY);
     }
     
@@ -182,14 +184,43 @@ public class RecursosService {
 
 
 
-	public void setiIconos(ImageIcon iIconos) {
-		this.iIconos = iIconos;
+	public void setiProfile(ImageIcon iProfile) {
+		this.iProfile = iProfile;
+	}
+
+	public ImageIcon getiProfile() {
+		return iProfile;
 	}
 
 
 
+	public void setiIconos(ImageIcon iIconos) {
+		this.iIconos = iIconos;
+	}
+
 	public static RecursosService getServicio() {
 		return servicio;
+	}
+
+    public ImageIcon getiCampana() {
+		return iCampana;
+	}
+
+
+
+	public void setiCampana(ImageIcon iCampana) {
+		this.iCampana = iCampana;
+	}
+
+
+	public ImageIcon getiMensaje() {
+		return iMensaje;
+	}
+
+
+
+	public void setiMensaje(ImageIcon iMensaje) {
+		this.iMensaje = iMensaje;
 	}
 
 
