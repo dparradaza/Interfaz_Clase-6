@@ -4,9 +4,9 @@ Interfaz gráfica con java
 
 Sigle page aplication
 
-![Alt text](clase6/recursos/siglepage.png?raw=true "calse6")
+![Alt text](Clase6/recursos/siglepage.png?raw=true "calse6")
 
 
 El final esperado es con base en la siguiente imagen
 
-![Alt text](clase6/recursos/Proyecto.png?raw=true "calse6")
+![Alt text](Clase6/recursos/Proyecto.png?raw=true "calse6")
